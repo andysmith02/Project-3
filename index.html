@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Andrew Smith || Online Registration Form</title>
+  <link rel="stylesheet" href="css/normalize.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header>
+    <h1>THE CODE REVIEW</h1>
+  </header>
+  <div class="banner">
+    <h2>Signup for our newsletter</h2>
+    <span class="tagline">Get the latest news on how your code is doing right in your inbox</span>
+  </div>
+  <form action="index.html" method="post">
+    <fieldset>
+      <legend class="contact-info"><span class="number">1</span> Contact Information</legend>
+      <label class="details" for="name">Full Name:</label>
+      <input type="text" id="name" name="user_name" placeholder="Required" required>
+      <label class="details" for="mail">Email Address:</label>
+      <input type="email" id="mail" name="user_email" placeholder="Required" required>
+      <label class="details" for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="user_phone">
+      <label class="details" for="street">Street Address:</label>
+      <input type="text" id="street" name="user_street">
+      <label class="details" for="city">City:</label>
+      <input type="text" id="city" name="user_city">
+      <label class="details" for="province">Province:</label>
+      <select id="province" name="user_province">
+        <option value="Choose Province">Choose Province</option>
+        <option value="AB">Alberta</option>
+      	<option value="BC">British Columbia</option>
+      	<option value="MB">Manitoba</option>
+      	<option value="NB">New Brunswick</option>
+      	<option value="NL">Newfoundland and Labrador</option>
+      	<option value="NT">Northwest Territories</option>
+      	<option value="NS">Nova Scotia</option>
+      	<option value="NU">Nunavut</option>
+      	<option value="ON">Ontario</option>
+      	<option value="PE">Prince Edward Island</option>
+      	<option value="QC">Quebec</option>
+      	<option value="SK">Saskatchewan</option>
+      	<option value="YT">Yukon</option>
+      </select>
+      <label class="details" for="postal_code">Postal Code:</label>
+      <input size="6" type="text" id="postal_code" name="post_code" maxlength="6" size="6">
+    </fieldset>
+    <fieldset>
+      <legend><span class="number">2</span> Newsletter</legend>
+      <span class="title">Select the newsletters you would like to recieve</span><br>
+      <input type="checkbox" id="html" value="interest_html" name="user_interest">
+      <label class="format" for="html">HTML News</label><br>
+      <input type="checkbox" id="css" value="interest_css" name="user_interest">
+      <label class="format" for="css">CSS News</label><br>
+      <input type="checkbox" id="javascript" value="interest_javascript" name="user_interest">
+      <label class="format" for="javascript">Javascript News</label><br>
+      <span class="news-format">Newsletter Format</span><br>
+      <input type="radio" id="html_format" value="html_format" name="news-format">
+      <label class="format" for="html_format">HTML</label><br>
+      <input type="radio" id="plain_text" value="plain_text" name="news-format">
+      <label class="format" for="plain_text">Plain Text</label><br>
+      <span class="title">Other topics you would like to hear about:</span>
+      <textarea id="topics" name="user_topics" placeholder="Add some feedback"></textarea>
+      <button style="cursor:pointer" type="submit">Sign Up</button>
+    </fieldset>
+    <footer class="main-footer">
+      <span>Copyright The Code Review</span>
+    </footer>
+  </form>
+</body>
+</html>

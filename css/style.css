@@ -1,0 +1,173 @@
+/* =================================
+  Base Element Styles
+==================================== */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0 auto;
+}
+
+form {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* =================================
+  Base Layout Styles
+==================================== */
+
+header {
+  color: white;
+  background: #2C3944;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+.banner {
+  margin: 10px auto;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+fieldset {
+  border: none;
+}
+
+legend {
+  color: black;
+  padding-top: 35px;
+  border-top: solid 2px black;
+  width: 100%;
+  font-size: 1.4em;
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea, select {
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  font-size: 16px;
+  height: auto;
+  padding: 10px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.03) inset;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  box-shadow: 0 0 5px rgba(81, 203, 238, 1);
+  border: solid 1px rgba(81, 203, 238, 1);
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 10px 10px 10px 0;
+}
+
+.number {
+  background-color: lightgrey;
+  color: black;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 0.8em;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.2);
+  border-radius: 100%;
+}
+
+.contact-info::before {
+  border-top: solid 5px black;
+  content: "";
+  width: 100%;
+  display: block;
+  position: relative;
+  top: -50px;
+}
+
+.title {
+  display: block;
+  color: grey;
+  margin-top: 10px;
+}
+
+.news-format {
+  display: block;
+  margin-top: 40px;
+  margin-bottom: -10px;
+  color: grey;
+}
+
+textarea {
+  margin-top: 20px;
+}
+
+button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  background: #4FBBB5;
+  width: 100%;
+  padding: 10px;
+  font-size: 1.3em;
+}
+
+.main-footer {
+  text-align: center;
+  color: lightgrey;
+  font-style: italic;
+}
+
+/* =================================
+  Media Queries
+==================================== */
+
+@media screen and (min-width: 768px) {
+
+  form {
+    width: 100%;
+    background: #f0f8ff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.13);
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  select {
+    display: inline-block;
+    float: right;
+    width: 58%;
+    margin-bottom: 40px;
+  }
+
+  .details {
+    float: left;
+    display: block;
+    margin-top: 20px;
+    padding-bottom: 40px;
+    width: 45%;
+    margin-right: -30px;
+  }
+
+  .number {
+    margin-left: -50px;
+  }
+}
